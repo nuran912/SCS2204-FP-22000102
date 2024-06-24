@@ -1,8 +1,7 @@
-object sphere{
-    def volume(r: Double) = 4/3*3.14*r*r*r
+object Company{
+    def salary(n: Int, ot: Int) = (n*250 + ot*85)*0.88
 
-    def main(args: Array[String]):Unit={
-        val vol = volume(5)
-        printf("%s %.2f", "Volume of the sphere is: ", vol)
+    def main(args : Array[String]) : Unit = {
+        println("take home salary of the employee per week: " + salary(40, 30) + "LKR")
     }
 }
